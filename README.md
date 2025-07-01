@@ -2,6 +2,7 @@
 | ----------------- | -------- | -------- |
 
 # USB MIDI Class Example
+Reference: https://github.com/Wunderbaeumchen99817/esp-idf/tree/master/examples/peripherals/usb/host/midi
 
 
 This example provides basic USB Host Midi functionality by implementing a midi class driver and a Host Library task. The example does the following:
@@ -11,6 +12,7 @@ This example provides basic USB Host Midi functionality by implementing a midi c
 3. Prints the device's information (such as device/configuration/string descriptors)
 4. Claims Interface with more that zero endpoints from device
 5. Prints received bytes, if midi-device sent new data
+6. Sends MIDI to Mac/PC using W5500 Ethernet
 
 The example heavily follows the usb_host_lib example (https://github.com/espressif/esp-idf/tree/master/examples/peripherals/usb/host/usb_host_lib).
 
